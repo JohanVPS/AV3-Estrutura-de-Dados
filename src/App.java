@@ -1,3 +1,6 @@
+//javac -d bin src/*.java
+//java src.App
+
 package src;
 
 import java.io.IOException;
