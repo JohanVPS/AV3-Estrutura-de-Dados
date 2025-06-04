@@ -111,7 +111,7 @@ public class PerformanceAnalyzer {
      */
     public long measureTraversalTime() {
         if (avlTree.isEmpty()) {
-            System.out.println("Árvore vazia. Não é possível medir o tempo de travessia.");
+            System.out.println("Árvore vazia. Não é possível medir o tempo de travessia em ordem.");
             System.out.flush();
             return 0;
         }
@@ -125,7 +125,7 @@ public class PerformanceAnalyzer {
         try {
             List<Student> sortedStudents = avlTree.inorderTraversal();
             traversalSize = sortedStudents.size();
-            System.out.println("Número de estudantes na travessia: " + traversalSize);
+            System.out.println("Número de estudantes na travessia em ordem: " + traversalSize);
 
             // Print first few students to verify sort order
             System.out.println("Primeiros 5 estudantes em ordem:");
@@ -134,7 +134,7 @@ public class PerformanceAnalyzer {
             }
             System.out.flush();
         } catch (Exception e) {
-            System.out.println("Erro durante a travessia: " + e.getMessage());
+            System.out.println("Erro durante a travessia em ordem: " + e.getMessage());
             e.printStackTrace();
             System.out.flush();
         }
@@ -224,7 +224,7 @@ public class PerformanceAnalyzer {
                 + String.format("%.6f", avgInsertionTime) + " ms por estudante)");
         System.out.println("Tempo total de busca: " + searchTime + " ms (média: " + String.format("%.6f", avgSearchTime)
                 + " ms por busca)");
-        System.out.println("Tempo total de travessia: " + traversalTime + " ms");
+        System.out.println("Tempo total de travessia em ordem: " + traversalTime + " ms");
         System.out.println("Tempo total de remoção: " + removalTime + " ms (média: "
                 + String.format("%.6f", avgRemovalTime) + " ms por remoção)");
 
