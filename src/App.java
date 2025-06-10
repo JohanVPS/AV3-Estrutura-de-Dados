@@ -30,7 +30,7 @@ public class App {
             // Cria e executa o analisador de desempenho
             PerformanceAnalyzer analyzer = new PerformanceAnalyzer(students);
             
-            // Vamos buscar 5000 estudantes aleatórios e remover 1000
+            // Buscar 5000 estudantes aleatórios e remover 1000
             int numberOfSearches = 5000;
             int numberOfRemovals = 1000;
             
