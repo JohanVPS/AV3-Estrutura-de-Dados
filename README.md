@@ -1,5 +1,7 @@
 # Análise de Desempenho de Árvores AVL
 
+Dupla: Johan e Morgana
+
 Este projeto analisa o desempenho da estrutura de dados de árvore AVL com um grande conjunto de registros de estudantes. Ele mede e reporta métricas de desempenho para operações de inserção, busca, percurso e remoção.
 
 ## Estrutura do Projeto
